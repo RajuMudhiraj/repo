@@ -1,0 +1,48 @@
+India
+	Telangana
+		Hyderabad 
+		Warangal
+		Khammam
+		Suryapet
+		Karimnagar
+	Andhra Pradesh
+		Vishakapatnam
+		Vijayawada
+		Amaravati
+		Dharmavaram
+		Srikakulam
+		Machilipatnam
+	Delhi
+		Delhi
+	Karnataka
+		Banlore
+		Hubli-Dharwad
+		Hospet
+		Bijapur
+	Maharashtra
+		Mumbai
+		Chandrapur
+		Pune
+		Nagpur
+		Thane
+		Nashik
+		Navi Mumbai
+	Haryana
+		Faridabad
+		Gurgaon
+		Rohtak
+		Karnal
+		Panipat
+		Sonipat
+		Yamunanagar
+		Panchkula
+		Ambala
+		Bhiwani
+		Sirsa
+	Gujarat
+		Ahmedabad
+		Jamnagar
+	Jammu&Kashmir
+		Jammu
+		Srinagar		
+
