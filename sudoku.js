@@ -47,7 +47,7 @@ function isTheInputValid(unsolvedSudoku) {
 
                 if (unsolvedSudoku[i][j + 1] == currentValue) {
                     console.log("Invalid Input")
-                    console.log(`The number ${unsolvedSudoku[i][j+1]} is already existed in row ${i+1}`);
+                    console.log(`The number ${unsolvedSudoku[i][j + 1]} is already existed in row ${i + 1}`);
                     return false
                 }
             }
@@ -78,6 +78,44 @@ function isTheInputValid(unsolvedSudoku) {
 }
 
 
-isTheInputValid(input2)
+// Check if the input is presolved. If not invoke the function
+function isTheInputPresolved(unsolvedSudoku) {
 
-// console.log(input2)
+    //check horizontally if 0 or repeated entries exist.
+
+    for (let i = 0; i < unsolvedSudoku.length; i++) {
+
+        for (let j = 0; j < unsolvedSudoku[i].length - 1; j++) {
+
+            if (unsolvedSudoku[i][j] == 0) {
+                isUnsolved = true;
+                return false;
+            }
+        }
+    }
+
+    //check vertically for repeated entries except 0.
+
+    for (let k = 0; k < unsolvedSudoku.length; k++) {
+
+        for (let l = 0; l < unsolvedSudoku[k].length - 1; l++) {
+
+            var currentValue;
+
+            if (unsolvedSudoku[l][k] != 0) {
+                currentValue = unsolvedSudoku[l][k];
+
+                if (unsolvedSudoku[l + 1][k] == currentValue) {
+                    console.log("Invalid Input")
+                    console.log(`The number ${unsolvedSudoku[l + 1][k]} is already existed in column ${k + 1}`);
+                    return false
+                }
+            }
+
+        }
+    }
+}
+
+isTheInputPresolved(input2)
+
+console.log(input2)
